@@ -1,1 +1,1 @@
-this is the Django project
+django task 
