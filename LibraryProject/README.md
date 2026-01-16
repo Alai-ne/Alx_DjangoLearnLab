@@ -1,2 +1,0 @@
-Django task
-we doing
