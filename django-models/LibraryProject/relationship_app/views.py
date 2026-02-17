@@ -3,7 +3,7 @@ from django.shortcuts import render
 # Create your view here
 from django.views.generic import DetailView
 from .models import Book, Library
-from .models import Library
+
 # Function-based view to list all books
 def list_books(request):
     books = Book.objects.all().select_related('author')
@@ -12,7 +12,7 @@ def list_books(request):
 # Class-based view to display library details
 class LibraryDetailView(DetailView):
     model = Library
-    template_name = 'relationship_app/list_bookis.html'
+    template_name = 'relationship_app/list_books.html'from .models import Library
     context_object_name = 'library'
 
     def get_context_data(self, **kwargs):
