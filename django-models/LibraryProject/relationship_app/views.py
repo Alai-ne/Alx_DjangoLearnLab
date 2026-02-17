@@ -12,7 +12,7 @@ def list_books(request):
 # Class-based view to display library details
 class LibraryDetailView(DetailView):
     model = Library
-    template_name = 'relationship_app/list_books.html'from .models import Library
+    template_name = 'relationship_app/list_books.html'from .models import Library'relationship_app/library_detail.html'
     context_object_name = 'library'
 
     def get_context_data(self, **kwargs):
