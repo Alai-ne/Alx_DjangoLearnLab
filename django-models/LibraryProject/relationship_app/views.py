@@ -1,9 +1,8 @@
 from django.shortcuts import render
-
-# Create your view here
-from django.views.generic import DetailView
+from django.views.generic.detail import DetailView
 from .models import Book, Library
 
+# Create your view here
 # Function-based view to list all books
 def list_books(request):
     books = Book.objects.all().select_related('author')
